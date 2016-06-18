@@ -29,6 +29,6 @@ def download(owner, repo, pr, github_user, github_token):
 
     return patchfile
 
-def review_patch(patchfile)
+def review_patch(patchfile):
     vim.command("PatchReview %s" % (patchfile))
     vim.command("file Overview")
